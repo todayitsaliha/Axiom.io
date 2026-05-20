@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Axiom — Track grades, GPA & attendance for students</title>
+    <meta
+      name="description"
+      content="Axiom is a personal academic OS for students. Track assignments, predict your GPA, manage attendance, and own your semester — all in one place."
+    />
+    <link rel="canonical" href="/" />
+
+    <meta name="author" content="Axiom" />
+    <meta name="theme-color" content="#0d0d0b" />
+
+    <!-- PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Axiom" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="icon" type="image/jpeg" href="/src/assests/favicon.jpeg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Axiom — Personal academic OS" />
+    <meta
+      property="og:description"
+      content="Track grades, predict GPA, and take control of your semester."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Axiom" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Axiom — Personal academic OS" />
+    <meta
+      name="twitter:description"
+      content="Track grades, predict GPA, and take control of your semester."
+    />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Axiom",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "description": "Personal academic management system for students — track grades, predict GPA, and manage attendance.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
