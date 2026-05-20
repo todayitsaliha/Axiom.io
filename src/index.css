@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=DM+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: 60 7% 5%;
+    --paper: 40 22% 92%;
+    --paper2: 36 16% 88%;
+    --paper3: 36 12% 84%;
+    --teal: 181 58% 31%;
+    --teal-pale: 183 46% 88%;
+    --teal-mid: 181 34% 51%;
+    --amber: 32 76% 69%;
+    --amber-pale: 37 90% 94%;
+    --red: 0 76% 60%;
+    --red-pale: 0 90% 95%;
+    --green: 130 35% 36%;
+    --green-pale: 130 30% 92%;
+    --mid: 20 4% 46%;
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
+    --primary: var(--teal);
+    --primary-foreground: 40 22% 92%;
+    --secondary: var(--paper2);
+    --secondary-foreground: var(--ink);
+    --muted: var(--paper2);
+    --muted-foreground: var(--mid);
+    --accent: var(--teal-pale);
+    --accent-foreground: var(--teal);
+    --destructive: var(--red);
+    --destructive-foreground: 40 22% 92%;
+    --border: 20 7% 5% / 0.12;
+    --input: 20 7% 5% / 0.12;
+    --ring: var(--teal);
+    --radius: 0px;
+    --sidebar-background: var(--ink);
+    --sidebar-foreground: 40 22% 92%;
+    --sidebar-primary: var(--teal);
+    --sidebar-primary-foreground: 40 22% 92%;
+    --sidebar-accent: 0 0% 100% / 0.05;
+    --sidebar-accent-foreground: 40 22% 92%;
+    --sidebar-border: 0 0% 100% / 0.08;
+    --sidebar-ring: var(--teal);
+
+    --f-serif: 'Fraunces', serif;
+    --f-mono: 'DM Mono', monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: hsl(var(--paper));
+    color: hsl(var(--ink));
+    font-family: var(--f-mono);
+    font-size: 12px;
+  }
+}
+
+/* Custom scrollbar */
+.custom-scroll::-webkit-scrollbar { width: 4px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-scroll::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 2px; }
